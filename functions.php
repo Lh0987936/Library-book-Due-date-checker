@@ -1,6 +1,8 @@
 <?php
+$Return = "";
+$Due = "";
 //If Return Date is after Due Date:
-
+if ($Return)
 //Display how many years, months, and days the book is overdue.
 
 //If Return Date is before Due Date:
