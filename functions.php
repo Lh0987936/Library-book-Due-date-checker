@@ -1,17 +1,35 @@
 <?php
-$Return = "";
-$Due = "";
+function TestTest($Return,) {
+    $Return = ($_GET['Return']);
+    return $Return;
+}
+function CheckLibraryBookDates(DateTime $Return, DateTime $Due) {
+    if ($Return > $Due) {
+        $diffChecker = 1;
+    }
+    elseif ($Return < $Due) {
+        $diffChecker = 2;
+    }
+    else {
+        $diffChecker = 3;
+    }
+    return $diffChecker;
+}
+function CheckDateDifferences(DateTime $return, DateTime $due) {
+    if($_GET) {
+        $difference = date_diff($return, $due);
+        return $difference;
+    }
+}
 //If Return Date is after Due Date:
-if ($Return)
-//Display how many years, months, and days the book is overdue.
-
-//If Return Date is before Due Date:
-
-//Display how many years, months, and days remain until the book is due.
-
-//If the dates are the same:
-
-//Display that the book is due today.
+// if ($_GET) {
     
-//Display the dates the user entered. 
+    //Display the dates the user entered. 
+
+// }
+
+
+
+    
+
 ?>
