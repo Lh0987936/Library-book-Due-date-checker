@@ -1,3 +1,4 @@
+<!-- Logan Hoover -->
 <?php
 include('functions.php');
 $diffChecker = 0;
@@ -27,7 +28,7 @@ if ($_GET) {
             <h1 class="text-center pb-3">Vespera Library Center</h1>
             <div class="d-flex justify-content-evenly flex-column align-items-center border border-dark mb-3 pt-2">
                 <div class="mb-2 ">
-                    <form method="get" name="dateForm">
+                    <form method="get" name="dateForm"> <!--The form-->
                         <h2>Input your Return date and Due date here</h2>
                         <label for="Return" class="form-label">Return Date: </label>
                         <input type="date" name="Return" id="Return" class="form=control"> <br>
@@ -40,7 +41,7 @@ if ($_GET) {
                     <h2>View your results here: </h2>
                     <p>Time Left:<br>
                         <?php
-                        if ($_GET) {
+                        if ($_GET) { //other half of my functions, checks my difference checker for what to do, and then sets up the echo within the <p> to format correctly.
                             if ($diffChecker == 1) {
                                 echo $difference->format("Your book is overdue by %y years, %m months, and %d days!\n");
                             } elseif ($diffChecker == 2) {
@@ -67,7 +68,7 @@ if ($_GET) {
                             } else {
                                 echo ("");
                             }
-                        }
+                        } //values you submitted!
                         ?>
                     </p>
                 </div>
