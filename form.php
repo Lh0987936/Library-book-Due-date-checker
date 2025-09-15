@@ -1,8 +1,8 @@
 <?php
 //Create a form with two inputs:
-    //Return Date (the date the book is or will be returned)
-    //Due Date (the date the book is due)
-    ?>
+//Return Date (the date the book is or will be returned)
+//Due Date (the date the book is due)
+?>
 <form method="get">
     <label for="Return">Return Date: </label>
     <input type="date" name="Return" id="Return"> <br>

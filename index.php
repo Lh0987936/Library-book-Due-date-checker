@@ -28,12 +28,12 @@ if ($_GET) {
             <div class="d-flex justify-content-evenly flex-column align-items-center border border-dark mb-3 pt-2">
                 <div class="mb-2 ">
                     <form method="get" name="dateForm">
-                        <h2>input your Return date and Due date here</h2>
-                        <label for="Return">Return Date: </label>
+                        <h2>Input your Return date and Due date here</h2>
+                        <label for="Return" class="form-label">Return Date: </label>
                         <input type="date" name="Return" id="Return" class="form=control"> <br>
-                        <label for="Due">Due Date: </label>
+                        <label for="Due" class="form-label">Due Date: </label>
                         <input type="date" name="Due" id="Due" class="form=control"><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" class="btn btn-success">
                     </form>
                 </div>
                 <div class="mb-2">
